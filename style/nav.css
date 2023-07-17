@@ -1,0 +1,78 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.middle {
+  display: flex;
+  gap: 5px;
+}
+
+.middle .input {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+.middle .input input {
+  border: none;
+  width: 280px;
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  padding-left: 10px;
+}
+
+.middle .input button {
+  border: none;
+  color: white;
+  padding: 0px 17px;
+  background-color: #303030;
+  cursor: pointer;
+}
+.right {
+  display: flex;
+}
+.icon {
+  color: white;
+  margin: 0px 12px;
+  cursor: pointer;
+}
+.middle {
+  position: relative;
+}
+.searchElement {
+  position: absolute;
+  background-color: #303030;
+  border-radius: 15px;
+  top: 44px;
+}
+.searchElement span {
+  padding: 10px 20px;
+  width: 280px;
+  display: block;
+}
+.searchElement span:hover {
+  background-color: #4c4b4b;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+  .right {
+    display: none;
+  }
+  .input .search {
+    display: none;
+  }
+  .middle .input button {
+    border-radius: 10px;
+  }
+}
